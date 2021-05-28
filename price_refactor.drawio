@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-05-28T00:42:51.676Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36" etag="E9WAfVFug-ZFVqZNKT7N" version="14.7.2" type="github">
+<mxfile host="app.diagrams.net" modified="2021-05-28T00:54:41.997Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36" etag="RzCCmhWThK4vAV_MPYo4" version="14.7.2" type="github">
   <diagram id="gU5jA1xEvA9jffqAlMgD" name="Page-1">
     <mxGraphModel dx="2066" dy="1131" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -29,7 +29,7 @@
             <mxRectangle x="30" y="40" width="80" height="26" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="oFmUKIQ2x4N6cIxG4Llz-11" value=".&#xa;scheduled&#xa;&#xa;where(payment_type: :scheduled)" style="text;fillColor=#f5f5f5;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;strokeColor=#666666;fontColor=#333333;fontFamily=&quot;DejaVu Sans Code&quot;;fontSize=11;" vertex="1" parent="oFmUKIQ2x4N6cIxG4Llz-9">
+        <mxCell id="oFmUKIQ2x4N6cIxG4Llz-11" value=".scheduled&#xa;&#xa;where(payment_type: :scheduled)" style="text;fillColor=#f5f5f5;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;strokeColor=#666666;fontColor=#333333;fontFamily=&quot;DejaVu Sans Code&quot;;fontSize=11;" vertex="1" parent="oFmUKIQ2x4N6cIxG4Llz-9">
           <mxGeometry y="26" width="360" height="60" as="geometry" />
         </mxCell>
         <mxCell id="oFmUKIQ2x4N6cIxG4Llz-10" value=".depositables&#xa;&#xa;      where(payment_type: :deposit)" style="text;fillColor=#f5f5f5;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;strokeColor=#666666;fontColor=#333333;fontFamily=&quot;DejaVu Sans Code&quot;;fontSize=11;whiteSpace=wrap;" vertex="1" parent="oFmUKIQ2x4N6cIxG4Llz-9">
@@ -45,11 +45,14 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="oFmUKIQ2x4N6cIxG4Llz-18" value="ItineraryCalculator::LineItem" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fontFamily=&quot;DejaVu Sans Code&quot;;whiteSpace=wrap;" vertex="1" parent="1">
-          <mxGeometry x="40" y="480" width="920" height="366" as="geometry">
+          <mxGeometry x="40" y="480" width="920" height="570" as="geometry">
             <mxRectangle x="30" y="40" width="80" height="26" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
         <mxCell id="oFmUKIQ2x4N6cIxG4Llz-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;jumpStyle=arc;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontFamily=&quot;DejaVu Sans Code&quot;;fontSize=11;fontColor=#333333;startSize=26;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="oFmUKIQ2x4N6cIxG4Llz-18" source="oFmUKIQ2x4N6cIxG4Llz-19" target="oFmUKIQ2x4N6cIxG4Llz-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="oFmUKIQ2x4N6cIxG4Llz-61" style="edgeStyle=orthogonalEdgeStyle;rounded=0;jumpStyle=arc;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontFamily=&quot;DejaVu Sans Code&quot;;fontSize=11;fontColor=#333333;startSize=26;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="oFmUKIQ2x4N6cIxG4Llz-18" source="oFmUKIQ2x4N6cIxG4Llz-19" target="oFmUKIQ2x4N6cIxG4Llz-59">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="oFmUKIQ2x4N6cIxG4Llz-19" value="# total_deposit_amount&#xa;&#xa;products_deposit_amount + properties_deposit_amount" style="text;fillColor=#f5f5f5;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;strokeColor=#666666;fontColor=#333333;fontFamily=&quot;DejaVu Sans Code&quot;;fontSize=11;" vertex="1" parent="oFmUKIQ2x4N6cIxG4Llz-18">
@@ -80,6 +83,26 @@
         <mxCell id="oFmUKIQ2x4N6cIxG4Llz-30" value="# full_price_products&#xa;&#xa;@full_price_partition.map do |product|&#xa;  ItineraryCalculator::Products::Price.new(product)&#xa;            end" style="text;fillColor=#f5f5f5;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;strokeColor=#666666;fontColor=#333333;fontFamily=&quot;DejaVu Sans Code&quot;;fontSize=11;" vertex="1" parent="oFmUKIQ2x4N6cIxG4Llz-18">
           <mxGeometry y="286" width="920" height="80" as="geometry" />
         </mxCell>
+        <mxCell id="oFmUKIQ2x4N6cIxG4Llz-62" style="edgeStyle=orthogonalEdgeStyle;rounded=0;jumpStyle=arc;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.25;entryDx=0;entryDy=0;fontFamily=&quot;DejaVu Sans Code&quot;;fontSize=11;fontColor=#333333;startSize=26;entryPerimeter=0;" edge="1" parent="oFmUKIQ2x4N6cIxG4Llz-18" source="oFmUKIQ2x4N6cIxG4Llz-59" target="oFmUKIQ2x4N6cIxG4Llz-60">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-20" y="396" />
+              <mxPoint x="-20" y="441" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="oFmUKIQ2x4N6cIxG4Llz-59" value="# property_deposit_amount&#xa;&#xa;property_deposit_payables.sum { |i| i[:amount] }&#xa;" style="text;fillColor=#f5f5f5;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;strokeColor=#666666;fontColor=#333333;fontFamily=&quot;DejaVu Sans Code&quot;;fontSize=11;" vertex="1" parent="oFmUKIQ2x4N6cIxG4Llz-18">
+          <mxGeometry y="366" width="920" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="oFmUKIQ2x4N6cIxG4Llz-64" style="edgeStyle=orthogonalEdgeStyle;rounded=0;jumpStyle=arc;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontFamily=&quot;DejaVu Sans Code&quot;;fontSize=11;fontColor=#333333;startSize=26;" edge="1" parent="oFmUKIQ2x4N6cIxG4Llz-18" source="oFmUKIQ2x4N6cIxG4Llz-60" target="oFmUKIQ2x4N6cIxG4Llz-63">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="oFmUKIQ2x4N6cIxG4Llz-60" value="# property_deposit_payables&#xa;&#xa;properties.map(&amp;:upfront_value).compact" style="text;fillColor=#f5f5f5;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;strokeColor=#666666;fontColor=#333333;fontFamily=&quot;DejaVu Sans Code&quot;;fontSize=11;" vertex="1" parent="oFmUKIQ2x4N6cIxG4Llz-18">
+          <mxGeometry y="426" width="920" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="oFmUKIQ2x4N6cIxG4Llz-63" value="# properties&#xa;&#xa;@itinerary.property_line_items.map do |property|&#xa;  ItineraryCalculator::Properties::Price.new(property)&#xa;      end" style="text;fillColor=#f5f5f5;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;strokeColor=#666666;fontColor=#333333;fontFamily=&quot;DejaVu Sans Code&quot;;fontSize=11;" vertex="1" parent="oFmUKIQ2x4N6cIxG4Llz-18">
+          <mxGeometry y="486" width="920" height="84" as="geometry" />
+        </mxCell>
         <mxCell id="oFmUKIQ2x4N6cIxG4Llz-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;jumpStyle=arc;orthogonalLoop=1;jettySize=auto;html=1;entryX=-0.001;entryY=0.25;entryDx=0;entryDy=0;fontFamily=&quot;DejaVu Sans Code&quot;;fontSize=11;fontColor=#333333;startSize=26;entryPerimeter=0;" edge="1" parent="1" source="oFmUKIQ2x4N6cIxG4Llz-1" target="oFmUKIQ2x4N6cIxG4Llz-20">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
@@ -98,7 +121,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="oFmUKIQ2x4N6cIxG4Llz-34" value="ItineraryCalculator::Products::Price" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fontFamily=&quot;DejaVu Sans Code&quot;;whiteSpace=wrap;" vertex="1" parent="1">
-          <mxGeometry x="1080" y="480" width="360" height="260" as="geometry">
+          <mxGeometry x="1080" y="480" width="360" height="380" as="geometry">
             <mxRectangle x="30" y="40" width="80" height="26" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
@@ -110,14 +133,59 @@
             <mxPoint x="0.9200000000000728" y="129.98000000000002" as="sourcePoint" />
           </mxGeometry>
         </mxCell>
+        <mxCell id="oFmUKIQ2x4N6cIxG4Llz-48" style="edgeStyle=orthogonalEdgeStyle;rounded=0;jumpStyle=arc;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontFamily=&quot;DejaVu Sans Code&quot;;fontSize=11;fontColor=#333333;startSize=26;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="oFmUKIQ2x4N6cIxG4Llz-34" source="oFmUKIQ2x4N6cIxG4Llz-45" target="oFmUKIQ2x4N6cIxG4Llz-47">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="oFmUKIQ2x4N6cIxG4Llz-45" value="# deposit_values&#xa;&#xa;{&#xa;  id: @product.id,&#xa;  amount: deposit_amount,&#xa;  tax_amount: deposit_tax_amount,&#xa;  discount_amount: deposit_tax_amount,&#xa;  payable_amount: deposit_payable_amount,&#xa;  currency: @product.currency,&#xa;  product_type: @product.productable_type,&#xa;  deposit_percentage: @product.deposit_percentage&#xa;}" style="text;fillColor=#f5f5f5;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;strokeColor=#666666;fontColor=#333333;fontFamily=&quot;DejaVu Sans Code&quot;;fontSize=11;" vertex="1" parent="oFmUKIQ2x4N6cIxG4Llz-34">
           <mxGeometry y="86" width="360" height="174" as="geometry" />
+        </mxCell>
+        <mxCell id="oFmUKIQ2x4N6cIxG4Llz-47" value="# deposit_payable_amount&#xa;&#xa;@product.payable_amount * @product.deposit_percentage" style="text;fillColor=#f5f5f5;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;strokeColor=#666666;fontColor=#333333;fontFamily=&quot;DejaVu Sans Code&quot;;fontSize=11;" vertex="1" parent="oFmUKIQ2x4N6cIxG4Llz-34">
+          <mxGeometry y="260" width="360" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="oFmUKIQ2x4N6cIxG4Llz-46" value="# deposit_tax_amount&#xa;&#xa;@product.tax_amount * @product.deposit_percentage" style="text;fillColor=#f5f5f5;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;strokeColor=#666666;fontColor=#333333;fontFamily=&quot;DejaVu Sans Code&quot;;fontSize=11;" vertex="1" parent="oFmUKIQ2x4N6cIxG4Llz-34">
+          <mxGeometry y="320" width="360" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="oFmUKIQ2x4N6cIxG4Llz-49" style="edgeStyle=orthogonalEdgeStyle;rounded=0;jumpStyle=arc;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontFamily=&quot;DejaVu Sans Code&quot;;fontSize=11;fontColor=#333333;startSize=26;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="oFmUKIQ2x4N6cIxG4Llz-34" source="oFmUKIQ2x4N6cIxG4Llz-45" target="oFmUKIQ2x4N6cIxG4Llz-46">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="370" y="183" as="sourcePoint" />
+            <mxPoint x="370" y="300" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="oFmUKIQ2x4N6cIxG4Llz-43" style="edgeStyle=orthogonalEdgeStyle;rounded=0;jumpStyle=arc;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontFamily=&quot;DejaVu Sans Code&quot;;fontSize=11;fontColor=#333333;startSize=26;" edge="1" parent="1" source="oFmUKIQ2x4N6cIxG4Llz-33" target="oFmUKIQ2x4N6cIxG4Llz-36">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="oFmUKIQ2x4N6cIxG4Llz-44" style="edgeStyle=orthogonalEdgeStyle;rounded=0;jumpStyle=arc;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontFamily=&quot;DejaVu Sans Code&quot;;fontSize=11;fontColor=#333333;startSize=26;" edge="1" parent="1" source="oFmUKIQ2x4N6cIxG4Llz-30" target="oFmUKIQ2x4N6cIxG4Llz-36">
           <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="oFmUKIQ2x4N6cIxG4Llz-50" value="Product" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fontFamily=&quot;DejaVu Sans Code&quot;;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="1560" y="480" width="360" height="124" as="geometry">
+            <mxRectangle x="30" y="40" width="80" height="26" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="oFmUKIQ2x4N6cIxG4Llz-51" value=".payable_amount" style="text;fillColor=#f5f5f5;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;strokeColor=#666666;fontColor=#333333;fontFamily=&quot;DejaVu Sans Code&quot;;fontSize=11;" vertex="1" parent="oFmUKIQ2x4N6cIxG4Llz-50">
+          <mxGeometry y="26" width="360" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="oFmUKIQ2x4N6cIxG4Llz-52" value=".deposit_percentage" style="text;fillColor=#f5f5f5;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;strokeColor=#666666;fontColor=#333333;fontFamily=&quot;DejaVu Sans Code&quot;;fontSize=11;whiteSpace=wrap;" vertex="1" parent="oFmUKIQ2x4N6cIxG4Llz-50">
+          <mxGeometry y="60" width="360" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="oFmUKIQ2x4N6cIxG4Llz-54" value=".tax_amount" style="text;fillColor=#f5f5f5;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;strokeColor=#666666;fontColor=#333333;fontFamily=&quot;DejaVu Sans Code&quot;;fontSize=11;" vertex="1" parent="oFmUKIQ2x4N6cIxG4Llz-50">
+          <mxGeometry y="90" width="360" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="oFmUKIQ2x4N6cIxG4Llz-53" style="edgeStyle=orthogonalEdgeStyle;rounded=0;jumpStyle=arc;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontFamily=&quot;DejaVu Sans Code&quot;;fontSize=11;fontColor=#333333;startSize=26;" edge="1" parent="1" source="oFmUKIQ2x4N6cIxG4Llz-47" target="oFmUKIQ2x4N6cIxG4Llz-51">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1480" y="770" />
+              <mxPoint x="1480" y="523" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="oFmUKIQ2x4N6cIxG4Llz-55" style="edgeStyle=orthogonalEdgeStyle;rounded=0;jumpStyle=arc;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontFamily=&quot;DejaVu Sans Code&quot;;fontSize=11;fontColor=#333333;startSize=26;" edge="1" parent="1" source="oFmUKIQ2x4N6cIxG4Llz-46" target="oFmUKIQ2x4N6cIxG4Llz-54">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1520" y="830" />
+              <mxPoint x="1520" y="587" />
+            </Array>
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
