@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-05-28T03:19:03.883Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36" etag="cEpSNy1S5FfWIRd-vCwQ" version="14.7.2" type="github">
+<mxfile host="app.diagrams.net" modified="2021-05-28T03:47:23.017Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36" etag="-Yt8YrRin7IOtzMa2akI" version="14.7.2" type="github">
   <diagram id="gU5jA1xEvA9jffqAlMgD" name="Page-1">
     <mxGraphModel dx="2893" dy="1131" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -292,14 +292,19 @@
         </mxCell>
         <mxCell id="oFmUKIQ2x4N6cIxG4Llz-87" value="PropertyLineItem" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fontFamily=&quot;DejaVu Sans Code&quot;;whiteSpace=wrap;" vertex="1" parent="1">
           <mxGeometry x="2400" y="780" width="360" height="60" as="geometry">
-            <mxRectangle x="30" y="40" width="80" height="26" as="alternateBounds" />
+            <mxRectangle x="2400" y="780" width="80" height="26" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
         <mxCell id="oFmUKIQ2x4N6cIxG4Llz-88" value=".fees_amount" style="text;fillColor=#f5f5f5;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;strokeColor=#666666;fontColor=#333333;fontFamily=&quot;DejaVu Sans Code&quot;;fontSize=11;" vertex="1" parent="oFmUKIQ2x4N6cIxG4Llz-87">
           <mxGeometry y="26" width="360" height="34" as="geometry" />
         </mxCell>
         <mxCell id="oFmUKIQ2x4N6cIxG4Llz-91" style="edgeStyle=orthogonalEdgeStyle;rounded=0;jumpStyle=arc;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=&quot;DejaVu Sans Code&quot;;fontSize=11;fontColor=#333333;startSize=26;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="oFmUKIQ2x4N6cIxG4Llz-81" target="oFmUKIQ2x4N6cIxG4Llz-88">
-          <mxGeometry relative="1" as="geometry" />
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="3120" y="1210" />
+              <mxPoint x="3120" y="823" />
+            </Array>
+          </mxGeometry>
         </mxCell>
         <mxCell id="oFmUKIQ2x4N6cIxG4Llz-92" value="Itineraries::AddPropertyProduct" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fontFamily=&quot;DejaVu Sans Code&quot;;whiteSpace=wrap;" vertex="1" parent="1">
           <mxGeometry x="2400" y="90" width="780" height="620" as="geometry">
@@ -307,7 +312,12 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="oFmUKIQ2x4N6cIxG4Llz-96" style="edgeStyle=orthogonalEdgeStyle;rounded=0;jumpStyle=arc;orthogonalLoop=1;jettySize=auto;html=1;entryX=1.001;entryY=0.518;entryDx=0;entryDy=0;entryPerimeter=0;fontFamily=&quot;DejaVu Sans Code&quot;;fontSize=11;fontColor=#333333;startSize=26;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="oFmUKIQ2x4N6cIxG4Llz-92" source="oFmUKIQ2x4N6cIxG4Llz-93" target="oFmUKIQ2x4N6cIxG4Llz-95">
-          <mxGeometry relative="1" as="geometry" />
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="820" y="53" />
+              <mxPoint x="820" y="360" />
+            </Array>
+          </mxGeometry>
         </mxCell>
         <mxCell id="oFmUKIQ2x4N6cIxG4Llz-93" value=".fees_amount&#xa;&#xa;product_price[:fees_amount]" style="text;fillColor=#f5f5f5;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;strokeColor=#666666;fontColor=#333333;fontFamily=&quot;DejaVu Sans Code&quot;;fontSize=11;" vertex="1" parent="oFmUKIQ2x4N6cIxG4Llz-92">
           <mxGeometry y="26" width="780" height="54" as="geometry" />
@@ -319,10 +329,26 @@
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="2400" y="210" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="2340" y="823" />
-              <mxPoint x="2340" y="143" />
+              <mxPoint x="2360" y="823" />
+              <mxPoint x="2360" y="143" />
             </Array>
           </mxGeometry>
+        </mxCell>
+        <mxCell id="oFmUKIQ2x4N6cIxG4Llz-100" value="ItineraryCalculator::Properties::Ean" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fontFamily=&quot;DejaVu Sans Code&quot;;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="2400" y="1600" width="680" height="610" as="geometry">
+            <mxRectangle x="30" y="40" width="80" height="26" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="oFmUKIQ2x4N6cIxG4Llz-101" style="edgeStyle=orthogonalEdgeStyle;rounded=0;jumpStyle=arc;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontFamily=&quot;DejaVu Sans Code&quot;;fontSize=11;fontColor=#333333;startSize=26;exitX=0.001;exitY=0.733;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="oFmUKIQ2x4N6cIxG4Llz-100">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="0.9200000000000728" y="129.98000000000002" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="oFmUKIQ2x4N6cIxG4Llz-102" value="# initialize(property)&#xa;&#xa;@property = property&#xa;        @itinerary = @property.itinerary&#xa;        @past_policies = []&#xa;        @future_policies = []&#xa;        @scheduled_fees_policy = nil&#xa;&#xa;        # Both take payment details on checkout&#xa;        if @property.mor_ean_direct? || @property.mor_priceline?&#xa;  @past_policies &lt;&lt; { amount: @property.payable_amount_without_fees, due: @itinerary.paid_at }&#xa;&#xa;  if @property.fees_amount.nonzero?&#xa;    # Fee is collected at check-in for Expedia and Priceline&#xa;    @scheduled_fees_policy = { amount: @property.fees_amount, due: @property.arrive_at }&#xa;  end&#xa;elsif @property.mor_ean_hotel_collect?&#xa;  if @property.fees_amount.zero?&#xa;    @past_policies &lt;&lt; { amount: @property.payable_amount, due: @itinerary.paid_at }&#xa;  elsif @property.fees_amount.nonzero? &amp;&amp; @property.raw_deposit_policies.blank?&#xa;    # If no deposit policies are found, split scheduled payables&#xa;    @past_policies &lt;&lt; { amount: @property.payable_amount_without_fees, due: @itinerary.paid_at }&#xa;    @past_policies &lt;&lt; { amount: @property.fees_amount, due: @itinerary.paid_at }&#xa;  else&#xa;    partitions = ItineraryCalculator::Properties::PartitionPolicies.new(@property)&#xa;    @past_policies = partitions.past_policies&#xa;    @future_policies = partitions.future_policies&#xa;&#xa;    # If the total amount from property policies is less than the payable&#xa;    # amount, then add the fee amount.&#xa;    if partitions.total_amount &lt; @property.payable_amount&#xa;      if @future_policies.present?&#xa;        previous_schedule = @future_policies.pop&#xa;        previous_schedule[:amount] += @property.fees_amount&#xa;        @future_policies &lt;&lt; previous_schedule&#xa;      else # Otherwise, its already upfront&#xa;        previous_schedule = @past_policies.pop&#xa;        previous_schedule[:amount] += @property.fees_amount&#xa;        @past_policies &lt;&lt; previous_schedule&#xa;      end&#xa;    end&#xa;  end&#xa;else&#xa;  Rollbar.error(&quot;ItineraryCalculator::Properties::Ean - unhandled merchant of record&quot;, merchant_of_record: merchant_of_record)&#xa;        end" style="text;fillColor=#f5f5f5;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;strokeColor=#666666;fontColor=#333333;fontFamily=&quot;DejaVu Sans Code&quot;;fontSize=11;" vertex="1" parent="oFmUKIQ2x4N6cIxG4Llz-100">
+          <mxGeometry y="26" width="680" height="584" as="geometry" />
+        </mxCell>
+        <mxCell id="oFmUKIQ2x4N6cIxG4Llz-103" style="edgeStyle=orthogonalEdgeStyle;rounded=0;jumpStyle=arc;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=&quot;DejaVu Sans Code&quot;;fontSize=11;fontColor=#333333;startSize=26;" edge="1" parent="1" source="oFmUKIQ2x4N6cIxG4Llz-76" target="oFmUKIQ2x4N6cIxG4Llz-102">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
